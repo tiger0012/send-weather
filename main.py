@@ -44,7 +44,7 @@ def job():
     send_email(tem,weather)
     print('任务完成')
 
-schedule.every().day.at("07:30").do(job) 
+schedule.every().day.at("10:45").do(job) 
 while True:
     schedule.run_pending()
     time.sleep(1)
